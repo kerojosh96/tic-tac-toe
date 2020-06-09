@@ -1,15 +1,23 @@
 require_relative 'board'
-
+#Josh Cook.
 class Game
 
-def initialize(board = "fake")
+	def initialize(board = nil)
+		@board = board
+	end
 
-end
- def board(board)
-    @board = board
- end
+	 def board(x)
+		@board = x
+	 end
+	 
+	 def over?
+	   false
+	 end
+	 
+	 def winner
+		nil
+	 end
  
- def over?
- false
- end
+
+ 
 end
